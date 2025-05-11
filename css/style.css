@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #0e1317;
+    width: 100%;
+  }
+
+  header {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  header img {
+    max-width: 100%;
+    width: 25%;
+  }
+
+  header h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 1.3rem;
+    margin: 0.3em 0;
+    font-style: italic;
+    color: #ceae7b;
+    font-weight: 500;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .menu-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 48%;
+    background-color: white;
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #ceae7b;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1em;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .menu-section-title{
+    margin-top: 0.5em;
+    margin-left: 0.7em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
+      -2px 2px 0px black, 1px 0px 0px black, -1px 0px 0px black,
+      0px 1px 0px black, 0px -1px 0px black;
+  }
+
+  .menu-section p{
+    margin-left: 2.5em;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px black, -2px -2px 0px black, 2px -2px 0px black,
+      -2px 2px 0px black, 1px 0px 0px black, -1px 0px 0px black,
+      0px 1px 0px black, 0px -1px 0px black;
+  }
+
+  .button-menu-section{
+    position: absolute;
+    bottom: 3%; /* Adjust as needed */
+    left: 18.5%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ceae7b;
+    background: rgba(255, 215, 0, 0.1); /* semi-transparent gold */
+    border: 2px solid #ceae7b;
+    font-weight: 500;
+    text-shadow: 1px 1px 0px black;
+    padding: 0.3em 1em;
+
+    /* Important: background blur without blurring the text */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* For Safari support */
+
+    z-index: 1;
+  }
+
+  .large-section h2 {
+    margin-top: 0.5em;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 1em;
+    font-style: italic;
+  }
+
+  .large-section p {
+    margin-left: 4em;
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .large-section {
+    width: 100%;
+    flex: 0 1 100%;
+    background-image: url("../images/burgerLogo.png");
+    background-size: cover;
+    height: 250px;
+  }
+  .large-section button {
+    margin-top: 1em;
+    width: fit-content;
+    margin-left: 2em;
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    margin-left: 0;
+    border-radius: 10px;
+    color: #ceae7b;
+    background: rgba(255, 215, 0, 0.1); /* semi-transparent gold */
+    border: 2px solid #ceae7b;
+    font-weight: 600;
+    text-shadow: 1px 1px 0px black;
+
+    /* Important: background blur without blurring the text */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* For Safari support */
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .logoBackground1 {
+    background: url(../images/breakfastLogo.png);
+    background-size: cover;
+  }
+
+  .logoBackground2{
+    background: url(../images/appetizerColdLogo.png);
+    background-size: cover;
+  }
+
+  .logoBackground3{
+    background: url(../images/appetizerHotLogo.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logoBackground4{
+    background: url(../images/mainDishLogo.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
